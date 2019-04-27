@@ -1,0 +1,120 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+	<title> #Statistics </title>
+	<style>
+		body {
+		color: black;
+		background: Gainsboro;
+		}
+		ul {
+		list-style-type:none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+		}
+		li {
+			float: left;
+		}
+		
+		li a:hover{
+			background-color:#111
+		}
+		li a{
+			padding: 14px 16px;
+			text-align: center;
+			display: block;
+			color: white;
+			text-decoration: none;
+		
+		}
+		
+		.mySlides{display:none;}
+		.dots{
+			border-radius:50%;
+			height:15px;
+			width:15px;
+			margin: 0 2px; 
+			display: inline-block;
+			background-color: #bbb;
+		}
+		
+		.active {
+		background-color: #717171; 
+		}
+	</style> 
+</head>
+<body>
+	  <ul>
+
+
+
+                <li><a href="Final_Project_Home.html">Home</a></li>
+
+                <li><a href="Final_Project_statistics.html">Safety Statistics: Human Rights Campaign </a></li>
+				
+				<li><a href="Final_Project_GSA.html">Designing Effective GSAs</a></li>
+				
+                <li><a href="Final_Project_Development.html">Adolecent Development: Importance of Safe Spaces</a></li>
+				
+				<li><a href="Final_Project_Resources.html">Other Resources</a></li>
+               
+
+        </ul>
+		<br>
+		
+	<div class="mySlides">
+		<img src="https://assets2.hrc.org/files/images/blog/YouthReport-Statistics-1-1600x900.jpg" style="width:100%">
+	</div>
+	<div class="mySlides">
+		<img src="https://assets2.hrc.org/files/images/blog/YouthReport-Statistics-2-1600x900.jpg" style="width:100%">
+	</div>
+	<div class="mySlides">
+		<img src="https://assets2.hrc.org/files/images/blog/YouthReport-Statistics-3-1600x900.jpg" style="width:100%">
+	</div>
+	<div class="mySlides">
+		<img src="https://assets2.hrc.org/files/images/blog/YouthReport-Statistics-7-1600x900.jpg" style="width:100%">
+	</div>
+	<div class="mySlides">
+		<img src="https://assets2.hrc.org/files/images/blog/YouthReport-Statistics-11-1600x900.jpg" style="width:100%">
+	</div>
+	<br>
+	
+	<div style="text-align:center">
+		<span class='dots'> </span>
+		<span class='dots'> </span>
+		<span class='dots'> </span>
+		<span class='dots'> </span>
+		<span class='dots'> </span>
+	</div>
+	<script>
+		var slideIndex=0;
+		showSlides();
+		function showSlides() {
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName('dots');
+			for (var i =0;i<slides.length;i++){
+			slides[i].style.display='none';
+			dots[i].className = dots[i].className.replace(" active","")
+			}
+			if (slideIndex>slides.length-1){
+				slideIndex=0;
+			}
+			slides[slideIndex].style.display='block';
+			dots[slideIndex].className+=" active";
+			setTimeout(showSlides, 3000); 
+			slideIndex++; 
+		}
+	</script>
+
+	<p> (See first statistic)  Firstly, as 4 in 10 students say that the community in whihc they live is not accepting of LGBTQ+ students, it further illustraes the importance of creating safe spaces within schools for students to feel safe. 
+	<br> <br> (See second statistic) Secondly, if true safe spaces are not fostered, especially in an environment so important for a student's development, the physicl and emotional assult of students will only continue. 
+	<br> <br> (See third statistic) Thirdly, if safe spaces are not fostered then the academic career of LGBTQ+ students are jeopardized as they will be more concered about their safey rather than academics.  
+	<br> <br> (See fourth statistic) Although teachers and administorators can not control what students hear from the internet, they have some degree of control over what is said in schools 
+	and students should not have to hear negative messages surrounding the LGBTQ+ community.
+	<br> <br> (See fifth statistic) This is a step in the right direction, as most students are out to their classmates. Yet, about a third of students are not out to their classmates, indicating that schools still need to do better.
+</body>
+
+</html>
